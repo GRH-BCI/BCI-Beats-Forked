@@ -15,6 +15,16 @@ public class MusicLoopScript : MonoBehaviour
 
     public AudioSource myAudioSource;
 
+    public TextMesh pauseText;
+
+    // File paths for each instrument track
+    public AudioClip pianoClip1;
+    public AudioClip pianoClip2;
+
+
+    private AudioClip[] pianoClips;
+
+
     // The number of the sound clip to play. 0 stands for 'none'
     public int pianoTrack = 0;
     public int guitarTrack = 0;
@@ -25,12 +35,13 @@ public class MusicLoopScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        beat = 1;
+        beat = 0;
         measure = 1;
         timer = 0.0f;
 
         beatDuration = 60 / BPM;
 
+        pianoClips = new AudioClip[] {null, pianoClip1, pianoClip2};
         //newBeat(1);
     }
 
@@ -59,7 +70,7 @@ public class MusicLoopScript : MonoBehaviour
 
     void newBeat(int beatNumber) {
         // Play a sound here
-        myAudioSource.PlayOneShot(myAudioSource.clip, 1);
+        //myAudioSource.PlayOneShot(pianoClips[0], 1);
 
         pianoBeat(beat);
         guitarBeat(beat);
@@ -70,7 +81,9 @@ public class MusicLoopScript : MonoBehaviour
     }
 
     void pianoBeat(int beatNumber) {
-
+        if (beatNumber == 1) {
+            myAudioSource.PlayOneShot(pianoClips[pianoTrack], 1);
+        }
     }
 
     void guitarBeat(int beatNumber) {
@@ -84,6 +97,24 @@ public class MusicLoopScript : MonoBehaviour
     void bassBeat(int beatNumber) {
         
     }
+
+
+    [ContextMenu("Toggle Music")]
+    public void toggleMusic() {
+        if (isPlaying) {
+            isPlaying = false;
+            pauseText.text = "Resume Music";
+            pauseText.transform.position += Vector3.left * 0.6f; 
+        }
+        else {
+            isPlaying = true;
+            pauseText.text = "Pause Music";
+            pauseText.transform.position += Vector3.right * 0.6f;
+        }
+    }
+
+
+
 
 
 }

@@ -823,7 +823,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143761357}
-  m_Text: Pause Music
+  m_Text: Resume Music
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -904,7 +904,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.64, y: 1.61}
+  m_AnchoredPosition: {x: 2, y: 1.61}
   m_SizeDelta: {x: 102.77, y: 135.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1476112277
@@ -1215,7 +1215,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 992cc8295de141144b2b50486d61827b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1317,6 +1317,9 @@ MonoBehaviour:
   beat: 0
   measure: 0
   myAudioSource: {fileID: 1903253147}
+  pauseText: {fileID: 1143761358}
+  pianoClip1: {fileID: 8300000, guid: 992cc8295de141144b2b50486d61827b, type: 3}
+  pianoClip2: {fileID: 8300000, guid: 0e527528ad0f33e458f7e5d112c85fff, type: 3}
   pianoTrack: 0
   guitarTrack: 0
   saxophoneTrack: 0
