@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MusicLoopScript : MonoBehaviour
 {
@@ -43,6 +44,8 @@ public class MusicLoopScript : MonoBehaviour
 
         pianoClips = new AudioClip[] {null, pianoClip1, pianoClip2};
         //newBeat(1);
+        DontDestroyOnLoad(gameObject);
+        //SceneManager.LoadScene("Assets/Scenes/MainMenu.unity");
     }
 
     // Update is called once per frame
