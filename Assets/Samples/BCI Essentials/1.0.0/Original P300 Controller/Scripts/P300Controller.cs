@@ -38,82 +38,100 @@ public class P300Controller : Controller
 
     public float trainBufferTime = 0f;
 
+    public bool already_training = false;
+
+
+
 
     public override IEnumerator DoTraining()
     {
-        numFlashesPerObjectPerSelection = randNumFlashes.Next(numFlashesLowerLimit, numFlashesUpperLimit);
-        UnityEngine.Debug.Log("Number of flashes is " + numFlashesPerObjectPerSelection.ToString());
-
-        // Generate the target list
-        PopulateObjectList("tag");
-
-        // Create a random non repeating array 
-        int[] trainArray = new int[numTrainingSelections];
-        trainArray = MakeRNRA(numTrainingSelections, objectList.Count - 1);
-        PrintArray(trainArray);
-
-        yield return null;
-
-        //System.Random randNumFlashes = new System.Random();
-
-        // Loop for each training target
-        for (int i = 0; i < numTrainingSelections; i++)
+        if (!already_training)
         {
+            already_training = true;
             numFlashesPerObjectPerSelection = randNumFlashes.Next(numFlashesLowerLimit, numFlashesUpperLimit);
             UnityEngine.Debug.Log("Number of flashes is " + numFlashesPerObjectPerSelection.ToString());
 
-            // Get the target from the array
-            trainTarget = trainArray[i];
+            // Generate the target list
+            PopulateObjectList("tag");
 
-            // 
-            UnityEngine.Debug.Log("Running training selection " + i.ToString() + " on option " + trainTarget.ToString());
+            // Create a random non repeating array 
+            int[] trainArray = new int[numTrainingSelections];
+            trainArray = MakeRNRA(numTrainingSelections, objectList.Count - 1);
+            PrintArray(trainArray);
 
-            // Turn on train target
+            yield return null;
 
-            objectList[trainTarget].GetComponent<SPO>().OnTrainTarget();
+            //System.Random randNumFlashes = new System.Random();
 
-            // Go through the training sequence
-            yield return new WaitForSecondsRealtime(trainTargetPresentationTime);
-
-            if (trainTargetPersistent == false)
+            // Loop for each training target
+            for (int i = 0; i < numTrainingSelections; i++)
             {
-                objectList[trainTarget].GetComponent<SPO>().OffTrainTarget();
+                numFlashesPerObjectPerSelection = randNumFlashes.Next(numFlashesLowerLimit, numFlashesUpperLimit);
+                UnityEngine.Debug.Log("Number of flashes is " + numFlashesPerObjectPerSelection.ToString());
+
+                // Get the target from the array
+                trainTarget = trainArray[i];
+
+                // 
+                UnityEngine.Debug.Log("Running training selection " + i.ToString() + " on option " + trainTarget.ToString());
+
+                // Turn on train target
+
+                objectList[trainTarget].GetComponent<SPO>().OnTrainTarget();
+
+                // Go through the training sequence
+                yield return new WaitForSecondsRealtime(trainTargetPresentationTime);
+
+                if (trainTargetPersistent == false)
+                {
+                    objectList[trainTarget].GetComponent<SPO>().OffTrainTarget();
+                }
+
+                yield return new WaitForSecondsRealtime(0.5f);
+
+                // Calculate the length of the trial
+                float trialTime = (onTime + offTime) * (1f + (10f / refreshRate)) * (float)numFlashesPerObjectPerSelection * (float)objectList.Count;
+
+                UnityEngine.Debug.Log("This trial will take ~" + trialTime.ToString() + " seconds");
+
+                StimulusOn(false);
+                yield return new WaitForSecondsRealtime(trialTime);
+                yield return new WaitForSecondsRealtime(trainBufferTime);
+                //stimulusOff();
+
+                // If sham feedback is true, then show it
+                if (shamFeedback)
+                {
+                    objectList[trainTarget].GetComponent<SPO>().Select();
+                }
+
+                // Turn off train target
+                yield return new WaitForSecondsRealtime(0.5f);
+
+                if (trainTargetPersistent == true)
+                {
+                    objectList[trainTarget].GetComponent<SPO>().OffTrainTarget();
+                }
+
+                // Take a break
+                yield return new WaitForSecondsRealtime(trainBreak);
+
+                trainTarget = 99;
             }
 
-            yield return new WaitForSecondsRealtime(0.5f);
 
-            // Calculate the length of the trial
-            float trialTime = (onTime + offTime) * (1f + (10f / refreshRate)) * (float)numFlashesPerObjectPerSelection * (float)objectList.Count;
-
-            UnityEngine.Debug.Log("This trial will take ~" + trialTime.ToString() + " seconds");
-
-            StimulusOn(false);
-            yield return new WaitForSecondsRealtime(trialTime);
-            yield return new WaitForSecondsRealtime(trainBufferTime);
-            //stimulusOff();
-
-            // If sham feedback is true, then show it
-            if (shamFeedback)
-            {
-                objectList[trainTarget].GetComponent<SPO>().Select();
-            }
-
-            // Turn off train target
-            yield return new WaitForSecondsRealtime(0.5f);
-
-            if (trainTargetPersistent == true)
-            {
-                objectList[trainTarget].GetComponent<SPO>().OffTrainTarget();
-            }
-
-            // Take a break
-            yield return new WaitForSecondsRealtime(trainBreak);
-
-            trainTarget = 99;
+            marker.Write("Training Complete");
+            already_training = false;
+            SceneManager.LoadScene("Assets/ChooseInstrument.unity");
+        }
+        else
+        {
+            yield return false;
         }
 
-        marker.Write("Training Complete");
-        SceneManager.LoadScene("Assets/ChooseInstrument.unity");
+        
+        
+
 
     }
 
