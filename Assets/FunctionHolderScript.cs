@@ -19,9 +19,6 @@ public class FunctionHolderScript : MonoBehaviour
 
 
     public void LoadTrainingPhaseScene() {
-        SceneManager.LoadScene("Assets/Samples/BCI Essentials/1.0.0/Original P300 Controller/Scenes/P300Training.unity");
+        SceneManager.LoadScene("Assets/Scenes/TrainingSplash.unity");
     }
-
-
-
 }
