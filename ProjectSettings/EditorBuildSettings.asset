@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: 
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/MainMenu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 59bcfa44377535d42b6ee4dea27d6964
   - enabled: 1
     path: Assets/Samples/BCI Essentials/1.0.0/Original P300 Controller/Scenes/P300Training.unity
     guid: d9f88ac6560446f42986f625f13092d6
   - enabled: 1
-    path: Assets/ChooseInstrument.unity
+    path: Assets/Scenes/ChooseInstrument.unity
     guid: 9c46f7d3424297b4e961fee3f89ddd64
+  - enabled: 1
+    path: Assets/Scenes/TrainingSplash.unity
+    guid: 30500ec822ef9b94e94f97fbf41056de
   m_configObjects: {}
