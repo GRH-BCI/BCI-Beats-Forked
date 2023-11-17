@@ -1,5 +1,5 @@
 
-project_env/Lib/
+
 
 # ----------------- EVERYTHING BELOW TAKEN FROM PUBLIC GITHUB ------------------
 # https://github.com/github/gitignore/blob/main/Unity.gitignore
@@ -33,6 +33,7 @@ project_env/Lib/
 # Visual Studio cache directory
 .vs/
 .vscode/
+.vsconfig
 
 # Gradle cache directory
 .gradle/
