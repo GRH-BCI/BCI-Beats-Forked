@@ -7,10 +7,10 @@ using System.Text;
 using System.Linq;
 using BCIEssentials.StimulusObjects;
 using Debug = UnityEngine.Debug;
+using UnityEngine.SceneManagement;
 
 public class P300Controller : Controller
 {
-
     public int numFlashesLowerLimit = 9;
     public int numFlashesUpperLimit = 12;
     public System.Random randNumFlashes = new System.Random();
@@ -113,6 +113,7 @@ public class P300Controller : Controller
         }
 
         marker.Write("Training Complete");
+        SceneManager.LoadScene("Assets/ChooseInstrument.unity");
 
     }
 
