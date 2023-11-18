@@ -22,9 +22,24 @@ public class FunctionHolderScript : MonoBehaviour
         SceneManager.LoadScene("Assets/Scenes/TrainingSplash.unity");
     }
 
-    public void LoadCreateMusicScene()
+    public void LoadPianoMusicScene()
     {
-        SceneManager.LoadScene("Assets/Scenes/CreateMusic.unity");
+        SceneManager.LoadScene("Assets/Scenes/PianoMusic.unity");
+    }
+
+    public void LoadGuitarMusicScene()
+    {
+        SceneManager.LoadScene("Assets/Scenes/GuitarMusic.unity");
+    }
+
+    public void LoadBassMusicScene()
+    {
+        SceneManager.LoadScene("Assets/Scenes/BassMusic.unity");
+    }
+
+    public void LoadDrumsMusicScene()
+    {
+        SceneManager.LoadScene("Assets/Scenes/DrumMusic.unity");
     }
 
     public void LoadBandScreenScene()
