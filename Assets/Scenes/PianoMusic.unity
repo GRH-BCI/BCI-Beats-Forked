@@ -2255,7 +2255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: LoadBandScreenScene
+      value: LoadChooseInstrumentScene
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
