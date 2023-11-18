@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CreateMusic.unity
     guid: 5a4d77593e44dbb46a9f408a138abbb2
+  - enabled: 1
+    path: Assets/Scenes/BandScreen.unity
+    guid: eb748274a61890c4588607d5964ebe0e
   m_configObjects: {}
