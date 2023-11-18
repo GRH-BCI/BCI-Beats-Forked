@@ -356,9 +356,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6145980287893823289, guid: eff9ed4300d046344aa489c2ef356d80, type: 3}
+      propertyPath: _targetStreamName
+      value: PythonResponse
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145980287893823291, guid: eff9ed4300d046344aa489c2ef356d80, type: 3}
+      propertyPath: timeDebug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145980287893823291, guid: eff9ed4300d046344aa489c2ef356d80, type: 3}
+      propertyPath: trainBufferTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145980287893823291, guid: eff9ed4300d046344aa489c2ef356d80, type: 3}
+      propertyPath: checkerBoardCols
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6145980287893823291, guid: eff9ed4300d046344aa489c2ef356d80, type: 3}
       propertyPath: numTrainingSelections
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eff9ed4300d046344aa489c2ef356d80, type: 3}

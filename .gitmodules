@@ -1,0 +1,3 @@
+[submodule "OpenBCI_LSL"]
+	path = OpenBCI_LSL
+	url = git@github.com:openbci-archive/OpenBCI_LSL.git

@@ -56,7 +56,7 @@ public class P300Controller : Controller
 
             // Create a random non repeating array 
             int[] trainArray = new int[numTrainingSelections];
-            trainArray = MakeRNRA(numTrainingSelections, objectList.Count - 1);
+            trainArray = MakeRNRA(numTrainingSelections, objectList.Count );
             PrintArray(trainArray);
 
             yield return null;
@@ -122,7 +122,7 @@ public class P300Controller : Controller
 
             marker.Write("Training Complete");
             already_training = false;
-            SceneManager.LoadScene("Assets/ChooseInstrument.unity");
+            //SceneManager.LoadScene("Assets/ChooseInstrument.unity");
         }
         else
         {
@@ -147,7 +147,7 @@ public class P300Controller : Controller
         UnityEngine.Debug.Log("User Training");
 
         // Get a random training target
-        trainTarget = randNumFlashes.Next(0, objectList.Count - 1);
+        trainTarget = randNumFlashes.Next(0, objectList.Count );
 
         // Turn on train target
 
@@ -209,7 +209,7 @@ public class P300Controller : Controller
         if (singleFlash)
         {
             int totalFlashes = numFlashesPerObjectPerSelection * objectList.Count;
-            int[] stimOrder = MakeRNRA(totalFlashes, objectList.Count - 1);
+            int[] stimOrder = MakeRNRA(totalFlashes, objectList.Count );
 
             for (int i = 0; i < stimOrder.Length; i++)
             {
