@@ -21,4 +21,9 @@ public class FunctionHolderScript : MonoBehaviour
     public void LoadTrainingPhaseScene() {
         SceneManager.LoadScene("Assets/Scenes/TrainingSplash.unity");
     }
+
+    public void LoadBandScreenScene()
+    {
+        SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
+    }
 }
