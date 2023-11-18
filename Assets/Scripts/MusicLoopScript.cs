@@ -16,7 +16,9 @@ public class MusicLoopScript : MonoBehaviour
 
     public AudioSource myAudioSource;
 
-    public TextMesh pauseText;
+    public SpriteRenderer pauseButton;
+    public Sprite pauseButtonRender;
+    public Sprite playButtonRender;
 
     // File paths for each instrument track
     public AudioClip pianoClip1;
@@ -106,13 +108,11 @@ public class MusicLoopScript : MonoBehaviour
     public void toggleMusic() {
         if (isPlaying) {
             isPlaying = false;
-            pauseText.text = "Resume Music";
-            pauseText.transform.position += Vector3.left * 0.6f; 
+            pauseButton.sprite = playButtonRender;
         }
         else {
             isPlaying = true;
-            pauseText.text = "Pause Music";
-            pauseText.transform.position += Vector3.right * 0.6f;
+            pauseButton.sprite = pauseButtonRender;
         }
     }
 
