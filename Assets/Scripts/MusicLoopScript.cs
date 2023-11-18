@@ -117,7 +117,9 @@ public class MusicLoopScript : MonoBehaviour
     }
 
 
-
+    public void changeInstrument() {
+        SceneManager.LoadScene("Assets/Scenes/ChooseInstrument.unity");
+    }
 
 
 }
