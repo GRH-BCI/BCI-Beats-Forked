@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalScale.x
@@ -148,11 +148,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.6
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: -3.88
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.z
@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
-      value: BCICube_Flashing (3)
+      value: BCICube_Flashing (6)
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -208,7 +208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: PianoMelody1Play
+      value: LoadChooseInstrumentScene
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -647,7 +647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalScale.x
@@ -663,11 +663,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.64
+      value: 7.2
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.44
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.z
@@ -703,7 +703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
-      value: BCICube_Flashing (4)
+      value: BCICube_Flashing (5)
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -723,7 +723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: PianoMelody2Play
+      value: PianoMelody3
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -828,7 +828,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalScale.x
@@ -848,7 +848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.z
@@ -884,7 +884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
-      value: BCICube_Flashing (2)
+      value: BCICube_Flashing (4)
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -904,7 +904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: PianoMelody3
+      value: PianoMelody2
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -925,7 +925,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalScale.x
@@ -941,11 +941,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.58
+      value: 7.2
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.05
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.z
@@ -981,7 +981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
-      value: BCICube_Flashing (5)
+      value: BCICube_Flashing (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -1001,7 +1001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: PianoMelody3Play
+      value: PianoMelody1
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -1274,7 +1274,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalScale.x
@@ -1290,11 +1290,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.2
+      value: -7.68
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1330,7 +1330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
-      value: BCICube_Flashing
+      value: BCICube_Flashing (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -1350,7 +1350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: PianoMelody1
+      value: PianoMelody3Play
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -1415,7 +1415,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalScale.x
@@ -1431,11 +1431,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.7
+      value: -7.68
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.880773
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1471,7 +1471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
-      value: BCICube_Flashing (6)
+      value: BCICube_Flashing (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -1491,7 +1491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: LoadChooseInstrumentScene
+      value: PianoMelody2Play
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -1921,7 +1921,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalScale.x
@@ -1937,11 +1937,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.2
+      value: -7.68
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1953,15 +1953,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1977,7 +1977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
-      value: BCICube_Flashing (1)
+      value: BCICube_Flashing (0)
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -1997,7 +1997,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: PianoMelody2
+      value: PianoMelody1Play
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
