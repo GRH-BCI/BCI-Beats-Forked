@@ -1,21 +1,39 @@
 # BCI-Beats
-A BCI music composition app, designed for NatHacks2023
+A BCI music composition app, designed for NatHacks2023. Find us on [Devpost](https://devpost.com/software/bci-beats).
 
+# Contributors
+- Jared Gourley
+- Jake Hennig
+- Kaiden Mastel
+- Mona Safari
+- Nicholas Mellon
+- Kai Luedemann
 
+# Setup
+1. Clone the BCI Beats GitHub repository
+2. Clone the OpenBCI LSL repository using
 
-Setting up the frontend:
-- Done already, but just required importing the bci-essentials-unity package from their github page into unity
+  ```git submodule add https://github.com/openbci-archive/OpenBCI_LSL.git```
 
+3. Create a virtual environment using
+   
+   ```python3 -m venv venv```
+   
+4. Install the requirements with
 
-Setting up the python backend:
+   ```pip3 install -r requirements.txt```
+   
+5. Create a Unity project for the repository
+6. Install BCI Essentials Unity into the Unity project by following these [instructions](https://github.com/kirtonBCIlab/bci-essentials-unity#install-into-unity-project)
+7. Connect your OpenBCI headset to your computer
 
-in your project main folder cmd, run python -m venv venv
+# Instructions
+1. Run the LabStreamingLayer using
 
-activate it by running venv\Scripts\activate.bat
-- you should now see (venv) before your directory
-- where.exe python should show the venv path at the top
-- if this doesn't work, your pc might have scripts disabled
-- https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.3
+  ```python3 OpenBCI_LSL/openbci_lsl.py --stream```
+  
+2. Start your Unity project
+3. Activate the virtual environment
+4. Run the backend program with
 
-now install the packages that are needed
-- pip install bci-essentials
+   ```python3 p300_unity_backend.py```
