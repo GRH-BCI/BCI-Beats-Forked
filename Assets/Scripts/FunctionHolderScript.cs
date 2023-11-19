@@ -30,31 +30,39 @@ public class FunctionHolderScript : MonoBehaviour
 
     public void LoadChooseInstrumentScene()
     {
+        // just trying to make sure no sounds play when switching away from the band screen, hacky solution af
+        StoreSounds.isPlaying = false;
+        AudioListener.volume = 0;
         SceneManager.LoadScene("Assets/Scenes/ChooseInstrument.unity");
     }
 
     public void LoadPianoMusicScene()
     {
+        
         SceneManager.LoadScene("Assets/Scenes/PianoMusic.unity");
     }
 
     public void LoadGuitarMusicScene()
     {
+        
         SceneManager.LoadScene("Assets/Scenes/GuitarMusic.unity");
     }
 
     public void LoadBassMusicScene()
     {
+        
         SceneManager.LoadScene("Assets/Scenes/BassMusic.unity");
     }
 
     public void LoadDrumsMusicScene()
     {
+        
         SceneManager.LoadScene("Assets/Scenes/DrumMusic.unity");
     }
 
     public void LoadBandScreenScene()
     {
+        AudioListener.volume = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
@@ -63,6 +71,7 @@ public class FunctionHolderScript : MonoBehaviour
         //AudioClip melody = Resources.Load<AudioClip>("Piano1");
         //StoreSounds.noises.Add(melody);
         StoreSounds.pianoTrack = 1;
+        AudioListener.volume = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
@@ -71,6 +80,7 @@ public class FunctionHolderScript : MonoBehaviour
         //AudioClip melody = Resources.Load<AudioClip>("Piano2");
         //StoreSounds.noises.Add(melody);
         StoreSounds.pianoTrack = 2;
+        AudioListener.volume = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
@@ -79,6 +89,7 @@ public class FunctionHolderScript : MonoBehaviour
         //AudioClip melody = Resources.Load<AudioClip>("Piano3");
         //StoreSounds.noises.Add(melody);
         StoreSounds.pianoTrack = 3;
+        AudioListener.volume = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
@@ -87,6 +98,7 @@ public class FunctionHolderScript : MonoBehaviour
         //AudioClip melody = Resources.Load<AudioClip>("Guitar1");
         //StoreSounds.noises.Add(melody);
         StoreSounds.guitarTrack = 1;
+        AudioListener.volume = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
@@ -95,6 +107,7 @@ public class FunctionHolderScript : MonoBehaviour
         //AudioClip melody = Resources.Load<AudioClip>("Guitar2");
         //StoreSounds.noises.Add(melody);
         StoreSounds.guitarTrack = 2;
+        AudioListener.volume = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
@@ -103,6 +116,7 @@ public class FunctionHolderScript : MonoBehaviour
         //AudioClip melody = Resources.Load<AudioClip>("Guitar3");
         //StoreSounds.noises.Add(melody);
         StoreSounds.guitarTrack = 3;
+        AudioListener.volume = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
@@ -111,6 +125,7 @@ public class FunctionHolderScript : MonoBehaviour
         //AudioClip melody = Resources.Load<AudioClip>("Drums1");
         //StoreSounds.noises.Add(melody);
         StoreSounds.drumTrack = 1;
+        AudioListener.volume = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
@@ -119,6 +134,7 @@ public class FunctionHolderScript : MonoBehaviour
         //AudioClip melody = Resources.Load<AudioClip>("Drums2");
         //StoreSounds.noises.Add(melody);
         StoreSounds.drumTrack = 2;
+        AudioListener.volume = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
@@ -127,6 +143,7 @@ public class FunctionHolderScript : MonoBehaviour
         //AudioClip melody = Resources.Load<AudioClip>("Drums3");
         //StoreSounds.noises.Add(melody);
         StoreSounds.drumTrack = 3;
+        AudioListener.volume = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
@@ -135,6 +152,7 @@ public class FunctionHolderScript : MonoBehaviour
         //AudioClip melody = Resources.Load<AudioClip>("Bass1");
         //StoreSounds.noises.Add(melody);
         StoreSounds.bassTrack = 1;
+        AudioListener.volume = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
@@ -143,6 +161,7 @@ public class FunctionHolderScript : MonoBehaviour
         //AudioClip melody = Resources.Load<AudioClip>("Bass2");
         //StoreSounds.noises.Add(melody);
         StoreSounds.bassTrack = 2;
+        AudioListener.volume = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
@@ -151,11 +170,13 @@ public class FunctionHolderScript : MonoBehaviour
         //AudioClip melody = Resources.Load<AudioClip>("Bass1");
         //StoreSounds.noises.Add(melody);
         StoreSounds.bassTrack = 3;
+        AudioListener.volume = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
     public void PianoMelody1Play()
     {
+        AudioListener.volume = 1;
         AudioClip melody = Resources.Load<AudioClip>("Piano1");
 
         AudioSource audioSource = gameObject.AddComponent<AudioSource>();
@@ -168,6 +189,7 @@ public class FunctionHolderScript : MonoBehaviour
 
     public void PianoMelody2Play()
     {
+        AudioListener.volume = 1;
         AudioClip melody = Resources.Load<AudioClip>("Piano2");
         AudioSource audioSource = gameObject.AddComponent<AudioSource>();
         // Assign the audio clip to the AudioSource
@@ -179,6 +201,7 @@ public class FunctionHolderScript : MonoBehaviour
 
     public void PianoMelody3Play()
     {
+        AudioListener.volume = 1;
         AudioClip melody = Resources.Load<AudioClip>("Piano3");
         AudioSource audioSource = gameObject.AddComponent<AudioSource>();
         // Assign the audio clip to the AudioSource
@@ -190,6 +213,7 @@ public class FunctionHolderScript : MonoBehaviour
 
     public void GuitarMelody1Play()
     {
+        AudioListener.volume = 1;
         AudioClip melody = Resources.Load<AudioClip>("Guitar1");
         AudioSource audioSource = gameObject.AddComponent<AudioSource>();
         // Assign the audio clip to the AudioSource
@@ -201,6 +225,7 @@ public class FunctionHolderScript : MonoBehaviour
 
     public void GuitarMelody2Play()
     {
+        AudioListener.volume = 1;
         AudioClip melody = Resources.Load<AudioClip>("Guitar2");
         AudioSource audioSource = gameObject.AddComponent<AudioSource>();
         // Assign the audio clip to the AudioSource
@@ -212,6 +237,7 @@ public class FunctionHolderScript : MonoBehaviour
 
     public void GuitarMelody3Play()
     {
+        AudioListener.volume = 1;
         AudioClip melody = Resources.Load<AudioClip>("Guitar3");
         AudioSource audioSource = gameObject.AddComponent<AudioSource>();
         // Assign the audio clip to the AudioSource
@@ -223,6 +249,7 @@ public class FunctionHolderScript : MonoBehaviour
 
     public void DrumsMelody1Play()
     {
+        AudioListener.volume = 1;
         AudioClip melody = Resources.Load<AudioClip>("Drums1");
         AudioSource audioSource = gameObject.AddComponent<AudioSource>();
         // Assign the audio clip to the AudioSource
@@ -234,6 +261,7 @@ public class FunctionHolderScript : MonoBehaviour
 
     public void DrumsMelody2Play()
     {
+        AudioListener.volume = 1;
         AudioClip melody = Resources.Load<AudioClip>("Drums2");
         AudioSource audioSource = gameObject.AddComponent<AudioSource>();
         // Assign the audio clip to the AudioSource
@@ -245,6 +273,7 @@ public class FunctionHolderScript : MonoBehaviour
 
     public void DrumsMelody3Play()
     {
+        AudioListener.volume = 1;
         AudioClip melody = Resources.Load<AudioClip>("Drums3");
         AudioSource audioSource = gameObject.AddComponent<AudioSource>();
         // Assign the audio clip to the AudioSource
@@ -256,6 +285,7 @@ public class FunctionHolderScript : MonoBehaviour
 
     public void BassMelody1Play()
     {
+        AudioListener.volume = 1;
         AudioClip melody = Resources.Load<AudioClip>("Bass1");
         AudioSource audioSource = gameObject.AddComponent<AudioSource>();
         // Assign the audio clip to the AudioSource
@@ -267,6 +297,7 @@ public class FunctionHolderScript : MonoBehaviour
 
     public void BassMelody2Play()
     {
+        AudioListener.volume = 1;
         AudioClip melody = Resources.Load<AudioClip>("Bass2");
         AudioSource audioSource = gameObject.AddComponent<AudioSource>();
         // Assign the audio clip to the AudioSource
@@ -278,6 +309,7 @@ public class FunctionHolderScript : MonoBehaviour
 
     public void BassMelody3Play()
     {
+        AudioListener.volume = 1;
         AudioClip melody = Resources.Load<AudioClip>("Bass1");
         AudioSource audioSource = gameObject.AddComponent<AudioSource>();
         // Assign the audio clip to the AudioSource
@@ -314,10 +346,12 @@ public class FunctionHolderScript : MonoBehaviour
     public void toggleMusic() {
         if (StoreSounds.isPlaying) {
             StoreSounds.isPlaying = false;
+            AudioListener.volume = 0;
             pauseButton.sprite = playButtonRender;
         }
         else {
             StoreSounds.isPlaying = true;
+            AudioListener.volume = 1;
             pauseButton.sprite = pauseButtonRender;
         }
     }
