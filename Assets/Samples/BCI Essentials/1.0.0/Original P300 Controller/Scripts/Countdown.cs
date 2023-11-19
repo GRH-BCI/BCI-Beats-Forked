@@ -37,7 +37,8 @@ public class Countdown : MonoBehaviour
 
         if (watch.ElapsedMilliseconds > 9000)
         {
-            SceneManager.LoadScene("Assets/Scenes/ChooseInstrument.unity");
+            //SceneManager.LoadScene("Assets/Scenes/ChooseInstrument.unity");
+            SceneManager.LoadScene("Assets/Samples/BCI Essentials/1.0.0/Original P300 Controller/Scenes/P300Training.unity");
         };
 
     }
