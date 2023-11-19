@@ -1,3 +1,5 @@
+<img src="https://github.com/BCI-Beats-NatHacks/BCI-Beats/assets/140631194/d868c503-2faa-4f02-8415-f52d0247aa77" alt="Logo" width="500"/>
+
 # BCI-Beats
 A BCI music composition app, designed for NatHacks2023. Find us on [Devpost](https://devpost.com/software/bci-beats).
 
