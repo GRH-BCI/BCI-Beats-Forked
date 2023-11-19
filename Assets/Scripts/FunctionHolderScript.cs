@@ -139,96 +139,133 @@ public class FunctionHolderScript : MonoBehaviour
     public void PianoMelody1Play()
     {
         AudioClip melody = Resources.Load<AudioClip>("Piano1");
-   
+
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        // Assign the audio clip to the AudioSource
         audioSource.clip = melody;
+
+        // Play the audio
         audioSource.Play();
     }
 
     public void PianoMelody2Play()
     {
         AudioClip melody = Resources.Load<AudioClip>("Piano2");
-        StoreSounds.noises.Add(melody);
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        // Assign the audio clip to the AudioSource
         audioSource.clip = melody;
+
+        // Play the audio
         audioSource.Play();
     }
 
     public void PianoMelody3Play()
     {
         AudioClip melody = Resources.Load<AudioClip>("Piano3");
-        StoreSounds.noises.Add(melody);
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        // Assign the audio clip to the AudioSource
         audioSource.clip = melody;
+
+        // Play the audio
         audioSource.Play();
     }
 
     public void GuitarMelody1Play()
     {
         AudioClip melody = Resources.Load<AudioClip>("Guitar1");
-        StoreSounds.noises.Add(melody);
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        // Assign the audio clip to the AudioSource
         audioSource.clip = melody;
+
+        // Play the audio
         audioSource.Play();
     }
 
     public void GuitarMelody2Play()
     {
         AudioClip melody = Resources.Load<AudioClip>("Guitar2");
-        StoreSounds.noises.Add(melody);
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        // Assign the audio clip to the AudioSource
         audioSource.clip = melody;
+
+        // Play the audio
         audioSource.Play();
     }
 
     public void GuitarMelody3Play()
     {
         AudioClip melody = Resources.Load<AudioClip>("Guitar3");
-        StoreSounds.noises.Add(melody);
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        // Assign the audio clip to the AudioSource
         audioSource.clip = melody;
+
+        // Play the audio
         audioSource.Play();
     }
 
     public void DrumsMelody1Play()
     {
         AudioClip melody = Resources.Load<AudioClip>("Drums1");
-        StoreSounds.noises.Add(melody);
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        // Assign the audio clip to the AudioSource
         audioSource.clip = melody;
+
+        // Play the audio
         audioSource.Play();
     }
 
     public void DrumsMelody2Play()
     {
         AudioClip melody = Resources.Load<AudioClip>("Drums2");
-        StoreSounds.noises.Add(melody);
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        // Assign the audio clip to the AudioSource
         audioSource.clip = melody;
+
+        // Play the audio
         audioSource.Play();
     }
 
     public void DrumsMelody3Play()
     {
         AudioClip melody = Resources.Load<AudioClip>("Drums3");
-        StoreSounds.noises.Add(melody);
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        // Assign the audio clip to the AudioSource
         audioSource.clip = melody;
+
+        // Play the audio
         audioSource.Play();
     }
 
     public void BassMelody1Play()
     {
         AudioClip melody = Resources.Load<AudioClip>("Bass1");
-        StoreSounds.noises.Add(melody);
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        // Assign the audio clip to the AudioSource
         audioSource.clip = melody;
+
+        // Play the audio
         audioSource.Play();
     }
 
     public void BassMelody2Play()
     {
         AudioClip melody = Resources.Load<AudioClip>("Bass2");
-        StoreSounds.noises.Add(melody);
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        // Assign the audio clip to the AudioSource
         audioSource.clip = melody;
+
+        // Play the audio
         audioSource.Play();
     }
 
     public void BassMelody3Play()
     {
         AudioClip melody = Resources.Load<AudioClip>("Bass1");
-        StoreSounds.noises.Add(melody);
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        // Assign the audio clip to the AudioSource
         audioSource.clip = melody;
+
+        // Play the audio
         audioSource.Play();
     }
 
@@ -236,8 +273,7 @@ public class FunctionHolderScript : MonoBehaviour
     {
         foreach (AudioClip c in StoreSounds.noises)
         {
-            AudioSource audioSource = GetComponent<AudioSource>();
-            audioSource = gameObject.AddComponent<AudioSource>();
+            AudioSource audioSource = gameObject.AddComponent<AudioSource>();
             // Assign the audio clip to the AudioSource
             audioSource.clip = c;
 
