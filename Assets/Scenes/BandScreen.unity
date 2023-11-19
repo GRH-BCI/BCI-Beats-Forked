@@ -1202,12 +1202,22 @@ MonoBehaviour:
   pauseButton: {fileID: 1187473179}
   pauseButtonRender: {fileID: 21300000, guid: 48c4d32c1d77fd74ebc133715cea147f, type: 3}
   playButtonRender: {fileID: 21300000, guid: b335064c9a3ba9c4cbb2c675e69a9a90, type: 3}
-  pianoClip1: {fileID: 8300000, guid: 992cc8295de141144b2b50486d61827b, type: 3}
-  pianoClip2: {fileID: 8300000, guid: 0e527528ad0f33e458f7e5d112c85fff, type: 3}
+  pianoClip1: {fileID: 8300000, guid: 5a203fbaaf036e24ba1831ac5f513076, type: 3}
+  pianoClip2: {fileID: 8300000, guid: 762bec12a98aa114c90671c4709c0b03, type: 3}
+  pianoClip3: {fileID: 8300000, guid: 7ac72a3c7586b9840a6923982b7c9356, type: 3}
+  guitarClip1: {fileID: 8300000, guid: 873304cfcead6ba48b76d28e8e87301b, type: 3}
+  guitarClip2: {fileID: 8300000, guid: 467c115c9a85bfa47a9d68bc2402e563, type: 3}
+  guitarClip3: {fileID: 8300000, guid: 198a72c644c2d5b4fabe85b0d5b00fee, type: 3}
+  bassClip1: {fileID: 8300000, guid: b87a1bb706edf0843b7370757136572a, type: 3}
+  bassClip2: {fileID: 8300000, guid: d280efdf4600c7244b72f32c5c5d0efa, type: 3}
+  bassClip3: {fileID: 8300000, guid: 14dad35071b87b7469a59980847f35bc, type: 3}
+  drumClip1: {fileID: 8300000, guid: 2e35e2b647d85bd47ac5f3946faa98fd, type: 3}
+  drumClip2: {fileID: 8300000, guid: e982bba3c62babf44be2dc250456c98d, type: 3}
+  drumClip3: {fileID: 8300000, guid: 3591f1a738ab69b4980fcea31654f866, type: 3}
   pianoTrack: 0
   guitarTrack: 0
-  saxophoneTrack: 0
   bassTrack: 0
+  drumTrack: 0
 --- !u!4 &1903253149
 Transform:
   m_ObjectHideFlags: 0
