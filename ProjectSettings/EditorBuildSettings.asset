@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BandScreen.unity
     guid: eb748274a61890c4588607d5964ebe0e
+  - enabled: 1
+    path: Assets/Scenes/BassMusic.unity
+    guid: 8d9f2d01a3899db4986e9abc75d1a602
+  - enabled: 1
+    path: Assets/Scenes/DrumMusic.unity
+    guid: 54221b00b6fb6d944921844566574d10
+  - enabled: 1
+    path: Assets/Scenes/GuitarMusic.unity
+    guid: 54662e51b7d5ac6468ffec2358db04d6
   m_configObjects: {}
