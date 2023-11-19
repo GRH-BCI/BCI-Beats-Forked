@@ -122,7 +122,7 @@ public class P300Controller : Controller
 
             marker.Write("Training Complete");
             already_training = false;
-            //SceneManager.LoadScene("Assets/ChooseInstrument.unity");
+            SceneManager.LoadScene("Assets/Scenes/ChooseInstrument.unity");
         }
         else
         {

@@ -282,4 +282,9 @@ public class FunctionHolderScript : MonoBehaviour
 
         }
     }
+
+    public void Reset()
+    {
+        StoreSounds.noises = new List<AudioClip>();
+    }
 }
