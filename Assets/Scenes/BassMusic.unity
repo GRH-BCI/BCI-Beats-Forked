@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalScale.x
@@ -148,11 +148,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.2
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -3.88
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.z
@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
-      value: BCICube_Flashing (2)
+      value: BCICube_Flashing (6)
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -208,7 +208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: GuitarMelody3Play
+      value: LoadChooseInstrumentScene
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -465,7 +465,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalScale.x
@@ -481,11 +481,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.6
+      value: 7.2
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.z
@@ -521,7 +521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
-      value: BCICube_Flashing (3)
+      value: BCICube_Flashing (5)
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -541,7 +541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: BassMelody1Play
+      value: BassMelody3
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -719,7 +719,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalScale.x
@@ -735,11 +735,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.7
+      value: 7.2
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.880773
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.z
@@ -775,7 +775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
-      value: BCICube_Flashing (6)
+      value: BCICube_Flashing (4)
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -795,7 +795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: LoadChooseInstrumentScene
+      value: BassMelody2
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -1196,7 +1196,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalScale.x
@@ -1252,7 +1252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
-      value: BCICube_Flashing
+      value: BCICube_Flashing (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -1293,7 +1293,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalScale.x
@@ -1309,11 +1309,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.2
+      value: -7.6
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1349,7 +1349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
-      value: BCICube_Flashing (1)
+      value: BCICube_Flashing (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -1369,7 +1369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: BassMelody2Play
+      value: BassMelody3Play
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -1988,7 +1988,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalScale.x
@@ -2004,11 +2004,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.58
+      value: -7.6
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.05
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2044,7 +2044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
-      value: BCICube_Flashing (5)
+      value: BCICube_Flashing (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -2064,7 +2064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: GuitarMelody3Play
+      value: BassMelody2Play
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -2089,7 +2089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalScale.x
@@ -2105,11 +2105,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.64
+      value: -7.6
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.44
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938659, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2145,7 +2145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
-      value: BCICube_Flashing (4)
+      value: BCICube_Flashing (0)
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
@@ -2165,7 +2165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: BassMelody2
+      value: BassMelody1Play
       objectReference: {fileID: 0}
     - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
