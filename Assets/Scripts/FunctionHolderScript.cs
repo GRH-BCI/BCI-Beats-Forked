@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class FunctionHolderScript : MonoBehaviour
 {
+
+    public SpriteRenderer pauseButton;
+    public Sprite pauseButtonRender;
+    public Sprite playButtonRender;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,85 +60,97 @@ public class FunctionHolderScript : MonoBehaviour
 
     public void PianoMelody1()
     {
-        AudioClip melody = Resources.Load<AudioClip>("Piano1");
-        StoreSounds.noises.Add(melody);
+        //AudioClip melody = Resources.Load<AudioClip>("Piano1");
+        //StoreSounds.noises.Add(melody);
+        StoreSounds.pianoTrack = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
     public void PianoMelody2()
     {
-        AudioClip melody = Resources.Load<AudioClip>("Piano2");
-        StoreSounds.noises.Add(melody);
+        //AudioClip melody = Resources.Load<AudioClip>("Piano2");
+        //StoreSounds.noises.Add(melody);
+        StoreSounds.pianoTrack = 2;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
     public void PianoMelody3()
     {
-        AudioClip melody = Resources.Load<AudioClip>("Piano3");
-        StoreSounds.noises.Add(melody);
+        //AudioClip melody = Resources.Load<AudioClip>("Piano3");
+        //StoreSounds.noises.Add(melody);
+        StoreSounds.pianoTrack = 3;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
     public void GuitarMelody1()
     {
-        AudioClip melody = Resources.Load<AudioClip>("Guitar1");
-        StoreSounds.noises.Add(melody);
+        //AudioClip melody = Resources.Load<AudioClip>("Guitar1");
+        //StoreSounds.noises.Add(melody);
+        StoreSounds.guitarTrack = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
     public void GuitarMelody2()
     {
-        AudioClip melody = Resources.Load<AudioClip>("Guitar2");
-        StoreSounds.noises.Add(melody);
+        //AudioClip melody = Resources.Load<AudioClip>("Guitar2");
+        //StoreSounds.noises.Add(melody);
+        StoreSounds.guitarTrack = 2;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
     public void GuitarMelody3()
     {
-        AudioClip melody = Resources.Load<AudioClip>("Guitar3");
-        StoreSounds.noises.Add(melody);
+        //AudioClip melody = Resources.Load<AudioClip>("Guitar3");
+        //StoreSounds.noises.Add(melody);
+        StoreSounds.guitarTrack = 3;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
     public void DrumsMelody1()
     {
-        AudioClip melody = Resources.Load<AudioClip>("Drums1");
-        StoreSounds.noises.Add(melody);
+        //AudioClip melody = Resources.Load<AudioClip>("Drums1");
+        //StoreSounds.noises.Add(melody);
+        StoreSounds.drumTrack = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
     public void DrumsMelody2()
     {
-        AudioClip melody = Resources.Load<AudioClip>("Drums2");
-        StoreSounds.noises.Add(melody);
+        //AudioClip melody = Resources.Load<AudioClip>("Drums2");
+        //StoreSounds.noises.Add(melody);
+        StoreSounds.drumTrack = 2;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
     public void DrumsMelody3()
     {
-        AudioClip melody = Resources.Load<AudioClip>("Drums3");
-        StoreSounds.noises.Add(melody);
+        //AudioClip melody = Resources.Load<AudioClip>("Drums3");
+        //StoreSounds.noises.Add(melody);
+        StoreSounds.drumTrack = 3;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
     public void BassMelody1()
     {
-        AudioClip melody = Resources.Load<AudioClip>("Bass1");
-        StoreSounds.noises.Add(melody);
+        //AudioClip melody = Resources.Load<AudioClip>("Bass1");
+        //StoreSounds.noises.Add(melody);
+        StoreSounds.bassTrack = 1;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
     public void BassMelody2()
     {
-        AudioClip melody = Resources.Load<AudioClip>("Bass2");
-        StoreSounds.noises.Add(melody);
+        //AudioClip melody = Resources.Load<AudioClip>("Bass2");
+        //StoreSounds.noises.Add(melody);
+        StoreSounds.bassTrack = 2;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
     public void BassMelody3()
     {
-        AudioClip melody = Resources.Load<AudioClip>("Bass1");
-        StoreSounds.noises.Add(melody);
+        //AudioClip melody = Resources.Load<AudioClip>("Bass1");
+        //StoreSounds.noises.Add(melody);
+        StoreSounds.bassTrack = 3;
         SceneManager.LoadScene("Assets/Scenes/BandScreen.unity");
     }
 
@@ -285,6 +303,23 @@ public class FunctionHolderScript : MonoBehaviour
 
     public void Reset()
     {
-        StoreSounds.noises = new List<AudioClip>();
+        //StoreSounds.noises = new List<AudioClip>();
+        StoreSounds.pianoTrack = 0;
+        StoreSounds.guitarTrack = 0;
+        StoreSounds.bassTrack = 0;
+        StoreSounds.drumTrack = 0;
+        StoreSounds.isPlaying = false;
     }
+
+    public void toggleMusic() {
+        if (StoreSounds.isPlaying) {
+            StoreSounds.isPlaying = false;
+            pauseButton.sprite = playButtonRender;
+        }
+        else {
+            StoreSounds.isPlaying = true;
+            pauseButton.sprite = pauseButtonRender;
+        }
+    }
+
 }

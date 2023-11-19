@@ -14,7 +14,10 @@ public class MusicLoopScript : MonoBehaviour
     private float timer;
     private float beatDuration;
 
-    public AudioSource myAudioSource;
+    public AudioSource pianoAudioSource;
+    public AudioSource guitarAudioSource;
+    public AudioSource bassAudioSource;
+    public AudioSource drumAudioSource;
 
     public SpriteRenderer pauseButton;
     public Sprite pauseButtonRender;
@@ -42,6 +45,11 @@ public class MusicLoopScript : MonoBehaviour
 
 
     // The number of the sound clip to play. 0 stands for 'none'
+    // DEFINED IN THE STORESOUNDS SCRIPT INITIALIZED IN THE MAIN MENU
+    // public int pianoTrack = StoreSounds.pianoTrack;
+    // public int guitarTrack = StoreSounds.guitarTrack;
+    // public int bassTrack = StoreSounds.bassTrack;
+    // public int drumTrack = StoreSounds.drumTrack;
     public int pianoTrack = 0;
     public int guitarTrack = 0;
     public int bassTrack = 0;
@@ -51,6 +59,19 @@ public class MusicLoopScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Delete self if a script manager object already exists
+        // check if there are any GameObjects (with the specified tag) spawned
+        if ( GameObject.FindGameObjectsWithTag("ScriptManager").Length > 1)
+        {
+            Destroy(gameObject);
+        }
+
+        // Set the global variables properly
+        // pianoTrack = StoreSounds.pianoTrack;
+        // guitarTrack = StoreSounds.guitarTrack;
+        // bassTrack = StoreSounds.bassTrack;
+        // drumTrack = StoreSounds.drumTrack;
+
         beat = 0;
         measure = 1;
         timer = 0.0f;
@@ -69,6 +90,12 @@ public class MusicLoopScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        pianoTrack = StoreSounds.pianoTrack;
+        guitarTrack = StoreSounds.guitarTrack;
+        bassTrack = StoreSounds.bassTrack;
+        drumTrack = StoreSounds.drumTrack;
+        isPlaying = StoreSounds.isPlaying;
+
         // Increment timer only if playing
         if (isPlaying) {
             timer += Time.deltaTime;
@@ -102,26 +129,26 @@ public class MusicLoopScript : MonoBehaviour
     }
 
     void pianoBeat(int beatNumber) {
-        if (beatNumber == 1) {
-            myAudioSource.PlayOneShot(pianoClips[pianoTrack], 1);
+        if (beatNumber == 1 && !pianoAudioSource.isPlaying) {
+            pianoAudioSource.PlayOneShot(pianoClips[pianoTrack], 1);
         }
     }
 
     void guitarBeat(int beatNumber) {
-        if (beatNumber == 1) {
-            myAudioSource.PlayOneShot(guitarClips[guitarTrack], 1);
+        if (beatNumber == 1 && !guitarAudioSource.isPlaying) {
+            guitarAudioSource.PlayOneShot(guitarClips[guitarTrack], 1);
         }
     }
 
     void bassBeat(int beatNumber) {
-        if (beatNumber == 1) {
-            myAudioSource.PlayOneShot(bassClips[bassTrack], 1);
+        if (beatNumber == 1 && !bassAudioSource.isPlaying) {
+            bassAudioSource.PlayOneShot(bassClips[bassTrack], 1);
         }
     }
 
     void drumBeat(int beatNumber) {
-        if (beatNumber == 1) {
-            myAudioSource.PlayOneShot(drumClips[drumTrack], 1);
+        if (beatNumber == 1 && !drumAudioSource.isPlaying) {
+            drumAudioSource.PlayOneShot(drumClips[drumTrack], 1);
         }
     }
 
