@@ -1,4 +1,6 @@
-<img src="https://github.com/BCI-Beats-NatHacks/BCI-Beats/assets/140631194/d868c503-2faa-4f02-8415-f52d0247aa77" alt="Logo" width="500"/>
+<p align="center">
+  <img src="https://github.com/BCI-Beats-NatHacks/BCI-Beats/assets/140631194/d868c503-2faa-4f02-8415-f52d0247aa77" alt="Logo" width="500"/>
+</p>
 
 # BCI-Beats
 A BCI music composition app, designed for NatHacks2023. Find us on [Devpost](https://devpost.com/software/bci-beats).
@@ -21,7 +23,7 @@ A BCI music composition app, designed for NatHacks2023. Find us on [Devpost](htt
    
    ```python3 -m venv venv```
    
-4. Install the requirements with
+4. Activate the virtual environment and install the requirements with
 
    ```pip3 install -r requirements.txt```
    
@@ -35,7 +37,6 @@ A BCI music composition app, designed for NatHacks2023. Find us on [Devpost](htt
   ```python3 OpenBCI_LSL/openbci_lsl.py --stream```
   
 2. Start your Unity project
-3. Activate the virtual environment
-4. Run the backend program with
+3. Run the backend program (in virtual environment) with
 
    ```python3 p300_unity_backend.py```
