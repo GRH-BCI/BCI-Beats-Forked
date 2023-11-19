@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 410563039}
         m_TargetAssemblyTypeName: FunctionHolderScript, Assembly-CSharp
-        m_MethodName: LoadCreateMusicScene
+        m_MethodName: LoadGuitarMusicScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -343,7 +343,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 410563039}
         m_TargetAssemblyTypeName: FunctionHolderScript, Assembly-CSharp
-        m_MethodName: LoadCreateMusicScene
+        m_MethodName: LoadBassMusicScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -892,7 +892,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 410563039}
         m_TargetAssemblyTypeName: FunctionHolderScript, Assembly-CSharp
-        m_MethodName: LoadCreateMusicScene
+        m_MethodName: LoadDrumsMusicScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2522,7 +2522,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 410563039}
         m_TargetAssemblyTypeName: FunctionHolderScript, Assembly-CSharp
-        m_MethodName: LoadCreateMusicScene
+        m_MethodName: LoadPianoMusicScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
