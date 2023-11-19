@@ -274,6 +274,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: BCICube_Flashing (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 133802492}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: GuitarMelody1Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: FunctionHolderScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
 --- !u!1 &133802491
@@ -456,6 +484,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: BCICube_Flashing
       objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 133802492}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: GuitarMelody1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: FunctionHolderScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
 --- !u!1 &263784701
@@ -614,13 +670,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267483562}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6.35, y: 4.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &293958223
 GameObject:
@@ -896,6 +952,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: BCICube_Flashing (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 133802492}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: GuitarMelody2Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: FunctionHolderScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
 --- !u!1001 &449887219
@@ -964,6 +1048,34 @@ PrefabInstance:
     - target: {fileID: 1048484350530938663, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
       propertyPath: m_Name
       value: BCICube_Flashing (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 133802492}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: GuitarMelody2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: FunctionHolderScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639228323464969584, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
+      propertyPath: OnSelectedEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00657d21e322c4f4ab44ff87d963e279, type: 3}
@@ -2493,7 +2605,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1778044941
 GameObject:
