@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class FunctionHolderScript : MonoBehaviour
 {
@@ -9,6 +11,13 @@ public class FunctionHolderScript : MonoBehaviour
     public SpriteRenderer pauseButton;
     public Sprite pauseButtonRender;
     public Sprite playButtonRender;
+    public Text resetText;
+
+    private void Awake()
+    {
+        // Ensure that this GameObject persists across scene changes
+        DontDestroyOnLoad(gameObject);
+    }
 
 
     // Start is called before the first frame update
@@ -36,28 +45,63 @@ public class FunctionHolderScript : MonoBehaviour
         SceneManager.LoadScene("Assets/Scenes/ChooseInstrument.unity");
     }
 
-    public void LoadPianoMusicScene()
+    private void OnPianoSceneLoaded(AsyncOperation asyncOperation)
     {
-        
-        SceneManager.LoadScene("Assets/Scenes/PianoMusic.unity");
+        // This method will be called when the scene finishes loading
+        // Now you can start playing melodies
+        PianoMelody1Play();
     }
 
+
+    private void OnGuitarSceneLoaded(AsyncOperation asyncOperation)
+    {
+        // This method will be called when the scene finishes loading
+        // Now you can start playing melodies
+        GuitarMelody1Play();
+    }
+
+    private void OnBassSceneLoaded(AsyncOperation asyncOperation)
+    {
+        // This method will be called when the scene finishes loading
+        // Now you can start playing melodies
+        BassMelody1Play();
+    }
+
+    private void OnDrumsSceneLoaded(AsyncOperation asyncOperation)
+    {
+        // This method will be called when the scene finishes loading
+        // Now you can start playing melodies
+        DrumsMelody1Play();
+    }
+
+    public void LoadPianoMusicScene()
+    {
+
+        //SceneManager.LoadScene("Assets/Scenes/PianoMusic.unity");
+        SceneManager.LoadSceneAsync("Assets/Scenes/PianoMusic.unity", LoadSceneMode.Single).completed += OnPianoSceneLoaded;
+        //PianoMelody1Play();
+    }
+    
     public void LoadGuitarMusicScene()
     {
         
-        SceneManager.LoadScene("Assets/Scenes/GuitarMusic.unity");
+        //SceneManager.LoadScene("Assets/Scenes/GuitarMusic.unity");
+        //GuitarMelody1Play();
     }
 
     public void LoadBassMusicScene()
     {
+
         
-        SceneManager.LoadScene("Assets/Scenes/BassMusic.unity");
+        //SceneManager.LoadScene("Assets/Scenes/BassMusic.unity");
+        BassMelody1Play();
     }
 
     public void LoadDrumsMusicScene()
     {
         
-        SceneManager.LoadScene("Assets/Scenes/DrumMusic.unity");
+        //SceneManager.LoadScene("Assets/Scenes/DrumMusic.unity");
+        DrumsMelody1Play();
     }
 
     public void LoadBandScreenScene()
@@ -185,6 +229,9 @@ public class FunctionHolderScript : MonoBehaviour
 
         // Play the audio
         audioSource.Play();
+        Invoke("PianoMelody2Play", melody.length);
+
+
     }
 
     public void PianoMelody2Play()
@@ -197,6 +244,7 @@ public class FunctionHolderScript : MonoBehaviour
 
         // Play the audio
         audioSource.Play();
+        Invoke("PianoMelody3Play", melody.length);
     }
 
     public void PianoMelody3Play()
@@ -221,6 +269,7 @@ public class FunctionHolderScript : MonoBehaviour
 
         // Play the audio
         audioSource.Play();
+        Invoke("GuitarMelody2Play", melody.length);
     }
 
     public void GuitarMelody2Play()
@@ -233,6 +282,7 @@ public class FunctionHolderScript : MonoBehaviour
 
         // Play the audio
         audioSource.Play();
+        Invoke("GuitarMelody3Play", melody.length);
     }
 
     public void GuitarMelody3Play()
@@ -257,6 +307,7 @@ public class FunctionHolderScript : MonoBehaviour
 
         // Play the audio
         audioSource.Play();
+        Invoke("DrumsMelody2Play", melody.length);
     }
 
     public void DrumsMelody2Play()
@@ -269,6 +320,7 @@ public class FunctionHolderScript : MonoBehaviour
 
         // Play the audio
         audioSource.Play();
+        Invoke("DrumsMelody3Play", melody.length);
     }
 
     public void DrumsMelody3Play()
@@ -293,6 +345,7 @@ public class FunctionHolderScript : MonoBehaviour
 
         // Play the audio
         audioSource.Play();
+        Invoke("BassMelody2Play", melody.length);
     }
 
     public void BassMelody2Play()
@@ -305,6 +358,8 @@ public class FunctionHolderScript : MonoBehaviour
 
         // Play the audio
         audioSource.Play();
+        Invoke("BassMelody3Play", melody.length);
+
     }
 
     public void BassMelody3Play()
@@ -341,6 +396,19 @@ public class FunctionHolderScript : MonoBehaviour
         StoreSounds.bassTrack = 0;
         StoreSounds.drumTrack = 0;
         StoreSounds.isPlaying = false;
+
+        // StartCoroutine(ShowResetText()); TODO!
+    }
+
+    IEnumerator ShowResetText() // chatGPT help
+    {
+        resetText.gameObject.SetActive(true); // Activate the text
+        resetText.text = "Game Reset!";
+
+        // Wait for a few seconds
+        yield return new WaitForSeconds(3f); // Adjust the duration as needed
+
+        resetText.gameObject.SetActive(false); // Deactivate the text after waiting
     }
 
     public void toggleMusic() {
