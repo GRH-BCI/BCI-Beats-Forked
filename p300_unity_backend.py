@@ -1,26 +1,25 @@
 import os
 import sys
-from bci_essentials.bci_data import ERP_data
-from bci_essentials.classification.erp_rg_classifier import ERP_rg_classifier
+from bci_essentials.erp_data import ErpData
+from bci_essentials.classification.erp_rg_classifier import ErpRgClassifier
+from bci_essentials.io.lsl_sources import LslEegSource, LslMarkerSource
+from bci_essentials.io.lsl_messenger import LslMessenger
 from pylsl import StreamInlet, resolve_stream
 import pandas as pd
 import numpy as np
 from datetime import datetime
-import threading
+#import threadingW
 
 
 # Add parent directory to path to access bci essentials
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
 
 
-# Initialize the ERP
-test_erp = ERP_data()
-
-# Set classifier settings ()
-test_erp.classifier = ERP_rg_classifier()  # you can add a subset here
+# Initialize the classifier
+classifier = ErpRgClassifier()
 
 # Set some settings
-test_erp.classifier.set_p300_clf_settings(
+classifier.set_p300_clf_settings(
     n_splits=5,
     lico_expansion_factor=1,
     oversample_ratio=0,
@@ -28,31 +27,43 @@ test_erp.classifier.set_p300_clf_settings(
     covariance_estimator="lwf", # oas????
 )
 
-# Connect the streams
-test_erp.stream_online_eeg_data(timeout=5,
-                           max_eeg_samples=1000000,
-                           max_marker_samples=100000,
-                           eeg_only=False,
-                           subset=[])  # you can also add a subset here
-test_erp.pull_data_from_stream(include_markers=False, include_eeg=True, return_eeg=False)
+# create LSL sources, these will block until the outlets are present
+eeg_source = LslEegSource()
+marker_source = LslMarkerSource()
+messenger = LslMessenger()
+
+# Initialize the ERP
+test_erp = ErpData(classifier, eeg_source, marker_source, messenger)
+
+
+
+# # Connect the streams
+# test_erp.stream_online_eeg_data(timeout=5,
+#                            max_eeg_samples=1000000,
+#                            max_marker_samples=100000,
+#                            eeg_only=False,
+#                            subset=[])  # you can also add a subset here
+# test_erp.pull_data_from_stream(include_markers=False, include_eeg=True, return_eeg=False)
 
 
 # Run main
-test_erp.main(
+test_erp.setup(
     online=True,
     training=True,
-    pp_low=1, #0.1?
-    pp_high=5, #10?
-    pp_order=3, #5? 
+    pp_low=1, #1 vs 0.1
+    pp_high=5, #5 vs 10?
+    pp_order=3, #3 vs 5? 
     plot_erp=False,
-    window_start=0.0,
-    window_end=0.8,
-    print_markers=True,
-    print_training=True,
-    print_fit=False,
-    print_performance=True,
-    print_predict=True,
+    trial_start=0.0,
+    trial_end=0.8,
+    # print_markers=True,
+    # print_training=True,
+    # print_fit=False,
+    # print_performance=True,
+    # print_predict=True,
     max_decisions=50,
-    #max_windows_per_option=10,
-    #max_num_options=16
+    max_trials_per_option=10,
+    max_num_options=16
 )
+
+test_erp.run()
