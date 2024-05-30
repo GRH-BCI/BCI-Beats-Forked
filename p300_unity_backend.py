@@ -24,7 +24,7 @@ classifier.set_p300_clf_settings(
     lico_expansion_factor=1,
     oversample_ratio=0,
     undersample_ratio=0,
-    covariance_estimator="lwf", # oas????
+    covariance_estimator="oas", # oas????
 )
 
 # create LSL sources, these will block until the outlets are present
@@ -62,8 +62,24 @@ test_erp.setup(
     # print_performance=True,
     # print_predict=True,
     max_decisions=50,
-    max_trials_per_option=10,
-    max_num_options=16
+    #max_trials_per_option=10,
+    #max_num_options=16
 )
 
 test_erp.run()
+
+
+
+'''
+                # Print the shape of X_train and y_train
+                print("Shape of X_train:", X_train.shape)
+                print("Shape of y_train:", y_train.shape)
+
+                # Optionally, print the data types
+                print("Data type of X_train:", X_train.dtype)
+                print("Data type of y_train:", y_train.dtype)
+
+                # Print a small sample of the values (you can adjust the slice to see more or less data)
+                print("Sample values from X_train:\n", X_train) #[:2, :, :])  # Adjust the slice as needed
+                print("Sample values from y_train:\n", y_train) #[:10])  # Adjust the slice as needed
+'''

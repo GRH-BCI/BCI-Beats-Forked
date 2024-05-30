@@ -17,7 +17,7 @@ public class TrainingCountdown : MonoBehaviour
     {
         if (watch.ElapsedMilliseconds > 10000)
         {
-            SceneManager.LoadScene("Assets/ChooseInstrument.unity");
+             SceneSwitcher.Instance.LoadScene("Assets/Scenes/ChooseInstrument.unity");
         };
 
     }
