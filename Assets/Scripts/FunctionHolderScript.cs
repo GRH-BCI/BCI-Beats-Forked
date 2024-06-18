@@ -25,7 +25,7 @@ public class FunctionHolderScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -34,6 +34,8 @@ public class FunctionHolderScript : MonoBehaviour
         
     }
 
+    public void LoadMainMenuScene() => SceneSwitcher.Instance.LoadScene("Assets/Scenes/MainMenu.unity");
+    public void LoadSettingsScene() => SceneSwitcher.Instance.LoadScene("Assets/Scenes/Settings.unity");
     public void LoadTrainingPhaseScene() => SceneSwitcher.Instance.LoadScene("Assets/Scenes/TrainingSplash.unity");
     public void LoadChooseInstrumentScene() 
     {

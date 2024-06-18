@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GuitarMusic.unity
     guid: 54662e51b7d5ac6468ffec2358db04d6
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 7c32c4fd5e1c8d34793d9e5e62669a91
   m_configObjects: {}

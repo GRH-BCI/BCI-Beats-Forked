@@ -14,6 +14,9 @@ public class AudioManager : MonoBehaviour
     private List<AudioSource> mainTrackClips;
     private List<AudioSource> testListenerClips;
 
+    private int loopCounter;
+    private int loopLimit;
+
     private void Awake()
     {
         if (Instance == null)
@@ -26,6 +29,8 @@ public class AudioManager : MonoBehaviour
 
             mainTrackSource = gameObject.AddComponent<AudioSource>();
             mainTrackClips = new List<AudioSource>();
+
+            loopLimit = 5; // 5 is default loop limit
         
         }
         else
@@ -33,7 +38,25 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public void SetLoopCounter(int setter)
+    {
+        loopCounter = setter;
+    }
 
+    public int GetLoopCounter()
+    {
+        return loopCounter;
+    }
+
+    public void SetLoopLimit(int setter)
+    {
+        loopLimit = setter;
+    }
+
+    public int GetLoopLimit()
+    {
+        return loopLimit;
+    }
     public void StopAllSounds()
     {
         AudioListener.volume = 0;
@@ -56,7 +79,10 @@ public class AudioManager : MonoBehaviour
             source.Stop();
             Destroy(source);
         }
+
         mainTrackClips.Clear();
+        StoreSounds.isPlaying = false;
+        SetLoopCounter(0);
     }
 
 
@@ -99,7 +125,7 @@ public class AudioManager : MonoBehaviour
                 source.Play();
             }
         }
-        StartCoroutine(ChangeToNotPlaying(mainTrackClips));
+        StartCoroutine(RepeatPlaying(mainTrackClips));
     }
 
     
@@ -117,7 +143,7 @@ public class AudioManager : MonoBehaviour
 
 
 
-    private IEnumerator ChangeToNotPlaying(List<AudioSource> sources)
+    private IEnumerator RepeatPlaying(List<AudioSource> sources)
     {
         bool anyPlaying;
         do
@@ -134,8 +160,24 @@ public class AudioManager : MonoBehaviour
             yield return null;
         } while (anyPlaying);
 
-        StoreSounds.isPlaying = false;
-        StopMainTrack();
+
+        if (GetLoopCounter() < (GetLoopLimit()-1))
+        {
+            foreach (var source in sources)
+            {
+                if (source != null)
+                {
+                    source.Play();
+                }
+            }
+            loopCounter += 1;
+            StartCoroutine(RepeatPlaying(mainTrackClips));
+        }
+        else
+        {
+            StopMainTrack();
+
+        }
     }
 
 

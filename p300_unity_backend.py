@@ -1,14 +1,17 @@
 import os
 import sys
+from datetime import datetime
+import threading
+
+
 from bci_essentials.erp_data import ErpData
 from bci_essentials.classification.erp_rg_classifier import ErpRgClassifier
 from bci_essentials.io.lsl_sources import LslEegSource, LslMarkerSource
 from bci_essentials.io.lsl_messenger import LslMessenger
+
 from pylsl import StreamInlet, resolve_stream
 import pandas as pd
 import numpy as np
-from datetime import datetime
-import threading
 import mne
 
 
@@ -117,9 +120,9 @@ marker_recorder_thread.start()
 test_erp.setup(
     online=True,
     training=True,
-    pp_low=1, #1 vs 0.1
-    pp_high=5, #5 vs 10?
-    pp_order=3, #3 vs 5? 
+    pp_low=0.1, #1 vs 0.1
+    pp_high=15, #5 vs 10?
+    pp_order=5, #3 vs 5? 
     plot_erp=False,
     trial_start=0.0,
     trial_end=0.8,

@@ -624,6 +624,7 @@ MonoBehaviour:
   pauseButtonRender: {fileID: 0}
   playButtonRender: {fileID: 0}
   resetText: {fileID: 0}
+  noises: []
 --- !u!4 &410563040
 Transform:
   m_ObjectHideFlags: 0
