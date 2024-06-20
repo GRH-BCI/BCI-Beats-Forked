@@ -178,6 +178,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BCICube_Flashing (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.b
+      value: 0.21960786
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.g
+      value: 0.21960786
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.r
+      value: 0.7882353
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
 --- !u!1001 &959930318
@@ -235,6 +247,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BCICube_Flashing (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.b
+      value: 0.112362035
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.g
+      value: 0.36058125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.r
+      value: 0.9528302
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
 --- !u!1001 &964780949
@@ -291,6 +315,18 @@ PrefabInstance:
     - target: {fileID: 1048484350530938663, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
       propertyPath: m_Name
       value: BCICube_Flashing (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.b
+      value: 0.087931626
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.g
+      value: 0.8738302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.r
+      value: 0.9811321
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
@@ -406,6 +442,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BCICube_Flashing (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.b
+      value: 0.050418302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.g
+      value: 0.9716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.r
+      value: 0.09200149
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
 --- !u!1001 &1280564756
@@ -463,6 +511,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BCICube_Flashing (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.b
+      value: 0.8962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.g
+      value: 0.114142045
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.r
+      value: 0.30985296
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
 --- !u!1001 &1335439622
@@ -519,6 +579,18 @@ PrefabInstance:
     - target: {fileID: 1048484350530938663, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
       propertyPath: m_Name
       value: BCICube_Flashing (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.b
+      value: 0.8679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.g
+      value: 0.24988018
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.r
+      value: 0.10234957
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
@@ -839,6 +911,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BCICube_Flashing (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.b
+      value: 0.9056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.g
+      value: 0.09825563
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.r
+      value: 0.5602567
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
 --- !u!1001 &2137672380
@@ -895,6 +979,18 @@ PrefabInstance:
     - target: {fileID: 1048484350530938663, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
       propertyPath: m_Name
       value: BCICube_Flashing (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.b
+      value: 0.06941973
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.g
+      value: 0.06941973
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898853191072348654, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
+      propertyPath: _flashOnColor.r
+      value: 0.0754717
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5294f13333eb5048bfa701d5c78b9db, type: 3}
@@ -987,7 +1083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6145980287893823291, guid: eff9ed4300d046344aa489c2ef356d80, type: 3}
       propertyPath: numTrainingSelections
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eff9ed4300d046344aa489c2ef356d80, type: 3}
