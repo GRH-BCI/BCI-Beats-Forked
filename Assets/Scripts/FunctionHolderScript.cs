@@ -17,8 +17,7 @@ public class FunctionHolderScript : MonoBehaviour
 
     private void Awake()
     {
-        // Ensure that this GameObject persists across scene changes
-        DontDestroyOnLoad(gameObject);
+
     }
 
 
