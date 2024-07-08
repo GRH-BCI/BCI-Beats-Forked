@@ -1,6 +1,7 @@
 
 venv/
 OpenBCI_LSL/
+data_sets/
 
 # ----------------- EVERYTHING BELOW TAKEN FROM PUBLIC GITHUB ------------------
 # https://github.com/github/gitignore/blob/main/Unity.gitignore
