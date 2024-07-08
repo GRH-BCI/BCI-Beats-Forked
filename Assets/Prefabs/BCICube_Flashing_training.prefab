@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7639228323464969584}
   - component: {fileID: 1898853191072348654}
   m_Layer: 0
-  m_Name: BCICube_Flashing
+  m_Name: BCICube_Flashing_training
   m_TagString: BCI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
