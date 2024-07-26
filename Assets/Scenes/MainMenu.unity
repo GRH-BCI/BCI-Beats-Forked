@@ -918,6 +918,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23f50a9a78a6de54e98ec5034337604c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerManager: {fileID: 0}
+  bciController: {fileID: 0}
 --- !u!1 &1563101368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,6 +1077,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44978d2cc9a3b9444aa332eeb5fc5075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerManager: {fileID: 0}
+  bciController: {fileID: 0}
   pauseButton: {fileID: 0}
   pauseButtonRender: {fileID: 0}
   playButtonRender: {fileID: 0}
@@ -1388,6 +1392,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1240375695}
     - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
+      propertyPath: onTime
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
+      propertyPath: offTime
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
       propertyPath: setupRequired
       value: 0
       objectReference: {fileID: 0}
@@ -1398,6 +1410,10 @@ PrefabInstance:
     - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
       propertyPath: numFlashesUpperLimit
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
+      propertyPath: numTrainingSelections
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe9e01d68d6e09459d879242af97964, type: 3}

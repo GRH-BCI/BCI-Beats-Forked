@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using BCIEssentials.Controllers;
 
-public class StartAutomatedTraining : MonoBehaviour
+public class StartAutomatedSelection : MonoBehaviour
 {
     [SerializeField]
     private GameObject controllerManager;
@@ -13,17 +13,15 @@ public class StartAutomatedTraining : MonoBehaviour
     {
         if (bciController == null)
         {
-            //bciController = GameObject.FindGameObjectWithTag("ControllerManager").GetComponent<BCIController>();
             controllerManager = GameObject.FindGameObjectWithTag("ControllerManager");
             bciController = controllerManager.GetComponent<BCIController>();
-            Debug.Log("No BCI Controller Found. Assigning one now.");
             StartCoroutine(InitCoroutine());
         }
     }
 
-    public void StartAutoTraining()
+    public void StartSelection()
     {
-        bciController.ActiveBehavior.StartTraining(BCITrainingType.Automated);
+        bciController.ActiveBehavior.StartStopStimulusRun();
         Debug.Log("done");
     }
 
@@ -34,6 +32,6 @@ public class StartAutomatedTraining : MonoBehaviour
         //bciController = GameObject.FindGameObjectWithTag("ControllerManager").GetComponent<BCIController>();
         bciController = controllerManager.GetComponent<BCIController>();
 
-        StartAutoTraining();
+        StartSelection();
     }
 }

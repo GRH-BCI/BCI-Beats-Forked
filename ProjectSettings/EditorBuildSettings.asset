@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 59bcfa44377535d42b6ee4dea27d6964
   - enabled: 1
-    path: Assets/Samples/BCI Essentials/1.0.0/Original P300 Controller/Scenes/P300Training.unity
+    path: Assets/Scenes/P300Training.unity
     guid: d9f88ac6560446f42986f625f13092d6
   - enabled: 1
     path: Assets/Scenes/ChooseInstrument.unity

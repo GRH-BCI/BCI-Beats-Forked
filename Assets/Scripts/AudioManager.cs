@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using BCIEssentials.Controllers;
 
 public class AudioManager : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class AudioManager : MonoBehaviour
 
     private int loopCounter;
     private int loopLimit;
+
+    [SerializeField]
+    private GameObject controllerManager;
+    [SerializeField]
+    private BCIController bciController;
 
     private void Awake()
     {
@@ -36,6 +42,12 @@ public class AudioManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+
+        if (bciController == null)
+        {
+            controllerManager = GameObject.FindGameObjectWithTag("ControllerManager");
+            bciController = controllerManager.GetComponent<BCIController>();
         }
     }
     public void SetLoopCounter(int setter)
@@ -203,5 +215,12 @@ public class AudioManager : MonoBehaviour
                 yield return new WaitForSeconds(source.clip.length);
             }
         }
+
+        StartP300Selection();
+    }
+
+    public void StartP300Selection()
+    {
+        bciController.ActiveBehavior.StartStopStimulusRun();
     }
 }

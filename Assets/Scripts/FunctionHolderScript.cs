@@ -3,10 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using BCIEssentials.Controllers;
 
 
 public class FunctionHolderScript : MonoBehaviour
 {
+
+
+    [SerializeField]
+    private GameObject controllerManager;
+    [SerializeField]
+    private BCIController bciController;
 
     public SpriteRenderer pauseButton;
     public Sprite pauseButtonRender;
@@ -14,9 +21,17 @@ public class FunctionHolderScript : MonoBehaviour
     public Text resetText;
     public List<AudioClip> noises = new List<AudioClip>();
 
+    public static FunctionHolderScript Instance { get; private set; }
+
 
     private void Awake()
     {
+
+        if (bciController == null)
+        {
+            controllerManager = GameObject.FindGameObjectWithTag("ControllerManager");
+            bciController = controllerManager.GetComponent<BCIController>();
+        }
 
     }
 
@@ -76,7 +91,6 @@ public class FunctionHolderScript : MonoBehaviour
 
     private void BassMelody1Play() => PlayMelody("Bass1", "Bass2", "Bass3");
 
-
     private void SetTrackAndLoadBandScene(string track)
     {
         AudioListener.volume = 1;
@@ -86,6 +100,11 @@ public class FunctionHolderScript : MonoBehaviour
 
         AudioManager.Instance.StopTestListener();
         SceneSwitcher.Instance.LoadScene("Assets/Scenes/BandScreen.unity");
+    }
+
+    public void StartP300Selection()
+    {
+        bciController.ActiveBehavior.StartStopStimulusRun();
     }
 
 
