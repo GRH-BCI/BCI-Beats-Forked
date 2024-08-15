@@ -414,8 +414,8 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 800, y: 550}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -862,7 +862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5ff6955c7a035489d095f9636c1e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _relativeDirectoryPath: BCI_Essentials-Backend/
+  _relativeDirectoryPath: BCI_Essentials-Backend-NEW/
 --- !u!114 &1240375695 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7879240703166595376, guid: afe9e01d68d6e09459d879242af97964, type: 3}
@@ -1041,8 +1041,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599271766}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.2633, y: 0.026, z: 0}
-  m_LocalScale: {x: 45.164425, y: 74.56173, z: 1.13798}
+  m_LocalPosition: {x: 1.06, y: -1.44, z: 0}
+  m_LocalScale: {x: 53.167564, y: 53.22216, z: 1.13798}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 346515571}
@@ -1400,20 +1400,28 @@ PrefabInstance:
       value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
+      propertyPath: trainBreak
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
       propertyPath: setupRequired
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
       propertyPath: numFlashesLowerLimit
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
       propertyPath: numFlashesUpperLimit
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
       propertyPath: numTrainingSelections
-      value: 10
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
+      propertyPath: trainTargetPresentationTime
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe9e01d68d6e09459d879242af97964, type: 3}

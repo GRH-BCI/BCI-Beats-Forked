@@ -39,8 +39,6 @@ def bci_essentials_setup():
     eeg_source = LslEegSource()
     marker_source = LslMarkerSource()
     messenger = LslMessenger()
-
-
     paradigm = P300Paradigm()
     data_tank = DataTank()
 
@@ -80,7 +78,7 @@ def custom_backend_setup():
     messenger = LslMessenger()
 
     # can initialize preprocessing features here
-    paradigm = P300Paradigm()
+    paradigm = P300Paradigm() # change features here if needed
     data_tank = DataTank()
     
     # Initialize the classifier

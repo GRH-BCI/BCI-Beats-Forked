@@ -9,7 +9,7 @@ public class LaunchExternalApplication : MonoBehaviour
     // Relative to the Unity project folder
     // Adjust the directory path as necessary
     // [SerializeField] private string _relativeDirectoryPath = @"../MindTV-Python/";
-    [SerializeField] private string _relativeDirectoryPath = @"BCI_Essentials-Backend/";
+    [SerializeField] private string _relativeDirectoryPath = @"BCI_Essentials-Backend-NEW/";
 
     public void LaunchExecutable(string fileName)
     {
