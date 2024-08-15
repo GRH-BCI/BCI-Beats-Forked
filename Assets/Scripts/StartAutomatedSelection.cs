@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using BCIEssentials.Controllers;
+using UnityEngine.UI;
 
 public class StartAutomatedSelection : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class StartAutomatedSelection : MonoBehaviour
     private GameObject controllerManager;
     [SerializeField]
     private BCIController bciController;
+    [SerializeField]
+    private Button play_button;
     private void Awake()
     {
         if (bciController == null)
@@ -21,8 +24,8 @@ public class StartAutomatedSelection : MonoBehaviour
 
     public void StartSelection()
     {
-        bciController.ActiveBehavior.StartStopStimulusRun();
-        Debug.Log("done");
+        // this runs p300 selection automatically. We will turn it off for now.
+        //bciController.ActiveBehavior.StartStopStimulusRun();
     }
 
     private IEnumerator InitCoroutine()

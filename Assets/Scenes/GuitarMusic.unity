@@ -254,6 +254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44978d2cc9a3b9444aa332eeb5fc5075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerManager: {fileID: 0}
+  bciController: {fileID: 0}
   pauseButton: {fileID: 0}
   pauseButtonRender: {fileID: 0}
   playButtonRender: {fileID: 0}
@@ -686,7 +688,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1244977441}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &504690886
 SpriteRenderer:
@@ -1015,11 +1017,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -1065,11 +1067,11 @@ RectTransform:
   - {fileID: 1685715330}
   - {fileID: 1332465863}
   - {fileID: 1288659151}
+  - {fileID: 504690885}
   - {fileID: 295894716}
   - {fileID: 246600638}
   - {fileID: 192253710}
   - {fileID: 27842644}
-  - {fileID: 504690885}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
