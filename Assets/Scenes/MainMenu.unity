@@ -1409,15 +1409,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
       propertyPath: numFlashesLowerLimit
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
       propertyPath: numFlashesUpperLimit
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
       propertyPath: numTrainingSelections
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7879240703166595379, guid: afe9e01d68d6e09459d879242af97964, type: 3}
       propertyPath: trainTargetPresentationTime
