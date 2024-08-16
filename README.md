@@ -80,13 +80,11 @@ A BCI music composition app, originally designed for NatHacks2023 ([Devpost](htt
         ```X = X[:, :-1, :]```
 
      Then, you must add the following code right above the ```self.clf.fit(X_train, y_train)``` line in the _fit_ function (in the same file):
-        ```
-        non_zero_channels = np.any(X_train != 0, axis=(0, 2))
+   
+        ```non_zero_channels = np.any(X_train != 0, axis=(0, 2))```
+        ```X_train = X_train[:, non_zero_channels, :]```
+        ```X_test = X_test[:, non_zero_channels, :]```
 
-        X_train = X_train[:, non_zero_channels, :]
-        X_test = X_test[:, non_zero_channels, :]
-
-        ```
 
 
 # Other Misc. Info
