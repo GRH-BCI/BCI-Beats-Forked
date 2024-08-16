@@ -81,10 +81,8 @@ A BCI music composition app, originally designed for NatHacks2023 ([Devpost](htt
 
      Then, you must add the following code right above the ```self.clf.fit(X_train, y_train)``` line in the _fit_ function (in the same file):
         ```
-        # Find channels that are all zeros across all samples and features
-        non_zero_channels = np.any(X_train != 0, axis=(0, 2)) # remove trigger channel inversely
+        non_zero_channels = np.any(X_train != 0, axis=(0, 2))
 
-        # Keep only the non-zero channels
         X_train = X_train[:, non_zero_channels, :]
         X_test = X_test[:, non_zero_channels, :]
 
