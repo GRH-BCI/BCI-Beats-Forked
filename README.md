@@ -38,9 +38,11 @@ A BCI music composition app, originally designed for NatHacks2023 ([Devpost](htt
 7. Connect your headset to your computer and start an LSL stream
 8. Run the LabStreamingLayer backend using
 
-  ```python3 p300_unity_backend.py```
+   ```python3 p300_unity_backend.py```
   
 9. Start your Unity project
+
+
 
 
 ***** As of the bci-essentials 0.2.0 release, you will need to make some modifications to the library for it to work properly.
@@ -74,11 +76,9 @@ A BCI music composition app, originally designed for NatHacks2023 ([Devpost](htt
 
 3. If you are using a DSI-24 headset, you will need to make additional modifications to remove its trigger channel data.
      First, you must add the following line in the _predict_ function, right above the code you added in step 2:
-        ```
-        # Remove trigger channel
-        X = X[:, :-1, :]
+        
+        ```X = X[:, :-1, :]```
 
-        ```
      Then, you must add the following code right above the ```self.clf.fit(X_train, y_train)``` line in the _fit_ function (in the same file):
         ```
         # Find channels that are all zeros across all samples and features
