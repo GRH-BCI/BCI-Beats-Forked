@@ -90,3 +90,7 @@ A BCI music composition app, originally designed for NatHacks2023 ([Devpost](htt
 # Other Misc. Info
   1. If you want to change the settings for P300 training, you can do this. In the main menu screen (in unity), find the _ControllerManager_ Object, which contains a _P300ControllerBehaviour_ object. Here you can change the properties of this object.
   2. If you have your own model you want to use, you can do this. In the _p300_unity_backend.py_ file, there is currently a global hyperparameter _bci_essentials_model_ that is set to True. Set this to false, and navigate to the _custom_backend_setup_ function. Write the path to your classifier where it says to (it must be pickled). Note that this is just a primitive setup that has not undergone rigorous testing. You may have to troubleshoot issues with your own custom model's compatibility, and thus additional backend changes may be needed.
+  3. There are some jupyter notebooks for data visualization that can be played around with (code is not clean whatsoever though)
+      a) data_visualizer is for visualizing p300 epochs from excel spreadsheet data
+      b) paper_implementation is implementation of the paper _An efficient P300 detection algorithm based on Kernel Principal Component Analysis-Support Vector Machine_
+      c) dataset_tester is attempting to apply b) to data from this competition: https://www.bbci.de/competition/iii/
