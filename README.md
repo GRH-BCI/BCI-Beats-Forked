@@ -23,14 +23,14 @@ A BCI music composition app, originally designed for NatHacks2023 ([Devpost](htt
 6. Play!
 
 
-# Setup for Working with Codebase
+# Setup for working with codebase
 1. Clone the BCI Beats GitHub repository
 2. Create a virtual environment using
    
    ```python3 -m venv venv```
     
 3. Activate the virtual environment and install the requirements for the backend (from bci essentials 0.2.0) with
-   ```pip3 install bci-essentials==0.2.0``` *****
+   ```pip3 install bci-essentials==0.2.0``` *****(see BCI Essentials Modifications)
    
 4. This should install any necessary dependencies. If any are missed, you may have to install these one-by-one if they come up in error messages.
 5. Create a Unity project for the repository
@@ -44,8 +44,8 @@ A BCI music composition app, originally designed for NatHacks2023 ([Devpost](htt
 
 
 
-
-***** As of the bci-essentials 0.2.0 release, you will need to make some modifications to the library for it to work properly.
+# BCI Essentials Modifications
+***** As of the bci-essentials 0.2.0 release, you will need to make some modifications to the library for it to work properly if you have gone through the codebase setup.
 1. In the file _bci_controller.py_, the current code has the following lines at the beginning of the _step_ function
      ```
         # Initialize the event marker buffer
